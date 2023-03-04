@@ -44,7 +44,7 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
   
   * En el archivo AcademiaDeMagia//settings.py actualizamos nuestras credenciales de acceso a SqlServer o bien, usamos una base de datos que nos da django por default con SQLite3 si es asi solo descomentamos las lineas de dicha conexión y comentamos las de Sql
 
-![image](![image](https://user-images.githubusercontent.com/61305491/222931339-ed85b914-9491-4fdb-bb60-ef11aa3f920d.png))
+![image](![image](https://user-images.githubusercontent.com/61305491/222931482-664ed270-aed5-49e2-8ce7-5c40d49ff02a.jpeg))
 
 ### Ejecución del Proyecto
 
@@ -86,3 +86,4 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
 # Autor
   
   Gilberto Anguiano Bastien
+![WhatsApp Image 2023-03-04 at 4 07 56 PM](https://user-images.githubusercontent.com/61305491/222931482-664ed270-aed5-49e2-8ce7-5c40d49ff02a.jpeg)
