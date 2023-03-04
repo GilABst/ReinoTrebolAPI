@@ -10,13 +10,15 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
 * Actualizar estatus de solicitud.
 * Consultar todas las solicitudes.
 * Consultar asignaciones de Grimorios.
-* Eliminar solicitud de ingreso
+* Eliminar solicitud de ingreso.
 
 # Pre-requisitos 
 
 * Python3
 * SqlServer
 * Sql Managment Studio
+* Visual Studio Code
+* Postman
 
 # Guia de Instalacion
   1. Clone el repositorio 
@@ -24,5 +26,63 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
      ```
      git clone git@github.com:GilABst/ReinoTrebolAPI.git
      ```
+     
+  2. Creación de entorno virtual
+    * Abrir el proyecto en Visual Studio Code
+    * Es recomedable la creación de un entorno virtual venv, para ello abrimos una consola en la carpeta donde clonamos el repositorio y ejecutamos los siguientes comandos, si tu ya tienes virtual env instalado no es necesario este paso.
+
+     ```
+     pip install virtualenv
+     virtualenv venv
+     ```
+     
+  
+   * una ves creado el entorno virtual se abre la carpeta en Visual Studio Code.
+   * Seleccionamos como interprete el que creamos en el entrono con f1 > Python: Seleccionar Interprete
+    
   ### Configuración de conexion de la base de datos.
   
+  * En el archivo AcademiaDeMagia//settings.py actualizamos nuestras credenciales de acceso a SqlServer o bien, usamos una base de datos que nos da django por default con SQLite3 si es asi solo descomentamos las lineas de dicha conexión y comentamos las de Sql
+
+![image](![image](https://user-images.githubusercontent.com/61305491/222931339-ed85b914-9491-4fdb-bb60-ef11aa3f920d.png))
+
+### Ejecución del Proyecto
+
+* Abrimos una teminal directo en Visual Studio Code.
+* Ejecutamos los siguientes comandos, en caso de ya tenerlos instalados y no usar el entrono virtual podras saltar este paso.
+     ```
+     pip install django
+     pip install djangorestframework
+     ```
+
+* Comando de ejecucion del proyecto.
+     ```
+     pip install django
+     pip install djangorestframework
+     python manage.py runserver 
+     ```
+  * Cancelamos la ejecución y corremos las migraciones con los comandos.
+
+     ```
+     python manage.py makemigrations
+     python manage.py migrate
+     ```
+* En caso de haber usado SQLServer necesitamos abrir Managment Studio y ejecutar el archivo Data_ReinoTrebol.sql esto cargara los datos estáticos de Grimorio y Aficiones Mágicas; si se opto por usar la opción de SQLite3 se debera cargar manualmente despues de realizar las migraciones (DB Browser SQLite nos permite realizar esta carga manual), ya que el sistema no permite la edición, ni adición de Grimorios ni de Aficiones, las tablas necesarias en ambos casos se crean automaticamente al ejecutar las migraciones.
+
+* Una ves ejecutandose el proyecto tendremos dos maneras de utilizarlo la primera de ellas localmente mediante la interfaz dada en el puerto que indique la ejecución generalmente en la dirección localhost:8000, la segunda de ellas mediante Postman enviando parametros como Body en formato JSON.
+
+
+# API Endpoints
+
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /api/aspirantes | Registar una solicitud |
+| PUT | /api/aspirantes/:Id  | Actualizar una solicitud |
+| GET | /api/aspirantes | Consultar todas las solictudes |
+| GET | /api/grimorio/| Consultar el grimorio |
+| PATCH | /api/aspirantes/:Id | Actualizar el estado de una solicitud |
+| DELETE | /api/aspirantes/:Id | Eliminar una solicitud |
+
+# Autor
+  
+  Gilberto Anguiano Bastien
