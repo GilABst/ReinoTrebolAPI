@@ -75,9 +75,13 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
 
 ![Captura de pantalla 2023-03-04 163500](https://user-images.githubusercontent.com/61305491/222931572-c8e1ed6b-c48e-4d26-8a85-ea8d3ed08239.jpg)
 
+Los parametros de los metodos POST, PATCH, PUT, DELETE son enviados mediante formularios web
+
 ### Ejecución en PostMan
 
 ![Captura de pantalla 2023-03-04 163553](https://user-images.githubusercontent.com/61305491/222931600-7c458522-df20-4612-8578-72c15c4d9426.jpg)
+
+Los parametros de los metodos POST, PATCH, PUT, DELETE son enviados mediante Body en codificación JSON
 
 # API Endpoints
 
