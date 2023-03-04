@@ -44,7 +44,7 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
   
   * En el archivo AcademiaDeMagia//settings.py actualizamos nuestras credenciales de acceso a SqlServer o bien, usamos una base de datos que nos da django por default con SQLite3 si es asi solo descomentamos las lineas de dicha conexión y comentamos las de Sql
 
-![image](![image](https://user-images.githubusercontent.com/61305491/222931482-664ed270-aed5-49e2-8ce7-5c40d49ff02a.jpeg))
+![WhatsApp Image 2023-03-04 at 4 07 56 PM](https://user-images.githubusercontent.com/61305491/222931482-664ed270-aed5-49e2-8ce7-5c40d49ff02a.jpeg)
 
 ### Ejecución del Proyecto
 
@@ -71,6 +71,13 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
 
 * Una ves ejecutandose el proyecto tendremos dos maneras de utilizarlo la primera de ellas localmente mediante la interfaz dada en el puerto que indique la ejecución generalmente en la dirección localhost:8000, la segunda de ellas mediante Postman enviando parametros como Body en formato JSON.
 
+### Ejecución en Puerto Local
+
+![Captura de pantalla 2023-03-04 163500](https://user-images.githubusercontent.com/61305491/222931572-c8e1ed6b-c48e-4d26-8a85-ea8d3ed08239.jpg)
+
+### Ejecución en PostMan
+
+![Captura de pantalla 2023-03-04 163553](https://user-images.githubusercontent.com/61305491/222931600-7c458522-df20-4612-8578-72c15c4d9426.jpg)
 
 # API Endpoints
 
@@ -86,4 +93,4 @@ Cuando se aprueba un registro se realiza una asignacion aleatoria de Grimorio. S
 # Autor
   
   Gilberto Anguiano Bastien
-![WhatsApp Image 2023-03-04 at 4 07 56 PM](https://user-images.githubusercontent.com/61305491/222931482-664ed270-aed5-49e2-8ce7-5c40d49ff02a.jpeg)
+
